@@ -1,0 +1,70 @@
+#product-title h1,.product-price
+{
+	 font-size:30px
+}
+
+.product-main-img-box .product-main-img,.similar-products-carousel figure img
+{
+	max-height:100%;
+	max-width:100%
+}
+
+#product-title{
+	padding:10px 0
+}
+.product-main-img-box{
+	border-radius:0
+}
+.product-price sup{
+	vertical-align:text-top;
+	font-size:15px
+}
+#product-form{
+	padding:16px 0
+}
+#product-form .product-form-payments,#product-form .product-form-quantity{
+	display:block;
+	padding-bottom:12px
+}
+.similar-products-carousel figure{
+	width:190px;
+	height:190px;
+	border-radius:0
+}
+#product-details{
+	border-top:1px solid $cor-tracado
+	}
+#product-details #product-questions>.qa-question{
+	color:cor-buyer
+}
+#product-details #product-questions>.qa-answer{
+	color: $cor-seller
+		}
+@media (max-width:1461px)
+{
+.similar-products-carousel figure
+{
+	width:150px;
+	height:150px
+}
+.similar-products-carousel .ch-carousel-item
+{
+	width:180px!important;
+	height:187.5px!important
+	;margin-right:27px!important
+}
+ }
+@media (max-width:1343px)
+{
+.similar-products-carousel 
+figure{
+	width:120px;
+	height:120px
+}
+.similar-products-carousel .ch-carousel-item
+{
+	width:144px!important;
+	height:146.5px!important;
+	margin-right:24px!important
+	}
+}
