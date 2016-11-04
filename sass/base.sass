@@ -1,0 +1,56 @@
+//Mixins
+@mixin fit-container($value)
+    max-height: $value
+    max-width: $value
+/*Styles*/
+#product-title
+    padding: 10px 0px 10px
+    h1
+        font-size: 30px
+.product-main-img-box
+    border-radius: 0px
+    .product-main-img
+        @include fit-container(100%)
+.product-price
+    font-size: 30px
+    sup
+        vertical-align: text-top
+        font-size: 15px
+#product-form
+    padding: 16px 0px 16px 0px
+    .product-form-quantity,
+    .product-form-payments
+        display: block
+        padding-bottom: 12px
+.similar-products-carousel
+    figure
+        width: 190px
+        height: 190px
+        border-radius: 0px
+        img
+            @include fit-container(100%)
+#product-details
+    border-top: 1px solid #cdcdcd
+    #product-questions > .qa-question
+        color: #3a87ad
+    #product-questions > .qa-answer
+        color: #468847
+/*Media queries*/
+@media (max-width: 1461px)
+    .similar-products-carousel
+        figure
+            width: 150px
+            height: 150px
+        .ch-carousel-item
+            width: 180px !important
+            height: 187.5px !important
+            margin-right: 27px !important
+@media (max-width: 1343px)
+    .similar-products-carousel
+        figure
+            width: 120px
+            height: 120px
+        .ch-carousel-item
+            width: 144px !important
+            height: 146.5px !important
+            margin-right: 24px !important
